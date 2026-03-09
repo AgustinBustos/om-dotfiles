@@ -7,7 +7,7 @@ ln -s ~/Documents/ideas/dotfiles/hyprland/bindings.conf ~/.config/hypr/
 ln -s ~/Documents/ideas/dotfiles/waybar/config.jsonc ~/.config/waybar/
 ln -s ~/Documents/ideas/dotfiles/.bashrc ~/
 ln -s ~/Documents/ideas/dotfiles/starship.toml ~/.config
-ln -s ~/Documents/ideas/dotfiles/dotrb ~/.config/omarchy/backgrounds/
+ln -s ~/Documents/ideas/dotfiles/backgrounds ~/.config/omarchy/themes/pink-blood-omarchy 
 ln -s ~/Documents/ideas/dotfiles/hyprland/hyprland.conf ~/.config/omarchy/themes/pink-blood-omarchy
 ln -s ~/Documents/ideas/dotfiles/chromium.theme ~/.config/omarchy/themes/pink-blood-omarchy
 ln -s ~/Documents/ideas/dotfiles/hyprland/windows.conf ~/.local/share/omarchy/default/hypr
