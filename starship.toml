@@ -1,0 +1,34 @@
+# Main layout
+format = """
+$username$hostname$directory$git_branch$git_status$python$nodejs$rust$fill$cmd_duration
+$character"""
+
+[username]
+show_always = true
+style_user = "bold blue"
+# We put the bracket inside the style group so it's treated as a literal string
+format = "[\\[$user]($style)"
+
+[hostname]
+ssh_only = false
+style = "bold blue"
+format = "[@$hostname]($style)"
+
+[directory]
+style = "bold cyan"
+# This puts the closing bracket inside the same style group as the path
+format = " [$path\\]]($style) "
+truncation_length = 3
+truncation_symbol = "…/"
+
+[character]
+success_symbol = "[\\$](bold green) "
+error_symbol = "[\\$](bold red) "
+
+[git_branch]
+symbol = "󰊢 "
+style = "bold purple"
+format = "on [$symbol$branch]($style) "
+
+[fill]
+symbol = " "

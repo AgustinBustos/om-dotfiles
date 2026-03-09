@@ -1,0 +1,13 @@
+ln -s ~/Documents/ideas/dotfiles/nvim/init.lua ~/.config/nvim
+ln -s ~/Documents/ideas/dotfiles/nvim/colors ~/.config/nvim
+ln -s ~/Documents/ideas/dotfiles/alacritty/alacritty.toml ~/.config/alacritty
+ln -s ~/Documents/ideas/dotfiles/hyprland/looknfeel.conf ~/.config/hypr
+ln -s ~/Documents/ideas/dotfiles/tmux/tmux.conf ~/.config/tmux
+ln -s ~/Documents/ideas/dotfiles/hyprland/bindings.conf ~/.config/hypr/
+ln -s ~/Documents/ideas/dotfiles/waybar/config.jsonc ~/.config/waybar/
+ln -s ~/Documents/ideas/dotfiles/.bashrc ~/
+ln -s ~/Documents/ideas/dotfiles/starship.toml ~/.config
+ln -s ~/Documents/ideas/dotfiles/dotrb ~/.config/omarchy/backgrounds/
+ln -s ~/Documents/ideas/dotfiles/hyprland/hyprland.conf ~/.config/omarchy/themes/pink-blood-omarchy
+ln -s ~/Documents/ideas/dotfiles/chromium.theme ~/.config/omarchy/themes/pink-blood-omarchy
+
