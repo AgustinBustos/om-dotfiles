@@ -1,6 +1,7 @@
+add_newline = false
+
 # Main layout
-format = """
-$username$hostname$directory$git_branch$git_status$python$nodejs$rust$fill$cmd_duration
+format = """$username$hostname$directory$git_branch$git_status$python$nodejs$rust$fill$cmd_duration
 $character"""
 
 [username]
