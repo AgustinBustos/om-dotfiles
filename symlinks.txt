@@ -10,4 +10,5 @@ ln -s ~/Documents/ideas/dotfiles/starship.toml ~/.config
 ln -s ~/Documents/ideas/dotfiles/dotrb ~/.config/omarchy/backgrounds/
 ln -s ~/Documents/ideas/dotfiles/hyprland/hyprland.conf ~/.config/omarchy/themes/pink-blood-omarchy
 ln -s ~/Documents/ideas/dotfiles/chromium.theme ~/.config/omarchy/themes/pink-blood-omarchy
+ln -s ~/Documents/ideas/dotfiles/hyprland/windows.conf ~/.local/share/omarchy/default/hypr
 
