@@ -1,4 +1,5 @@
 ln -s ~/Documents/ideas/dotfiles/nvim/init.lua ~/.config/nvim
+ln -s ~/Documents/ideas/dotfiles/nvim/syntax/ ~/.config/nvim
 ln -s ~/Documents/ideas/dotfiles/nvim/colors ~/.config/nvim
 ln -s ~/Documents/ideas/dotfiles/alacritty/alacritty.toml ~/.config/alacritty
 ln -s ~/Documents/ideas/dotfiles/hyprland/looknfeel.conf ~/.config/hypr

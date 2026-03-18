@@ -5,7 +5,7 @@
   "spacing": 0,
   "height": 26,
   "modules-left": ["custom/omarchy", "hyprland/workspaces"],
-  "modules-center": ["clock", "custom/update", "custom/voxtype", "custom/screenrecording-indicator", "custom/idle-indicator", "custom/notification-silencing-indicator"],
+  "modules-center": ["memory","clock",  "custom/voxtype", "custom/screenrecording-indicator", "custom/idle-indicator", "custom/notification-silencing-indicator"],
   "modules-right": [
     "group/tray-expander",
     "bluetooth",
@@ -54,17 +54,18 @@
     "interval": 21600
   },
 
+
   "cpu": {
     "interval": 5,
     "format": "󰍛",
     "on-click": "omarchy-launch-or-focus-tui btop"
   },
   "clock": {
-    "format": "{:L%A %H:%M}",
-    "format-alt": "{:L%d %B W%V %Y}",
-    "tooltip": false,
-    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
-  },
+  "format": "{:%H:%M %d/%m}",
+  "format-alt": "{:%A %d %B W%V %Y}",
+  "tooltip": false,
+  "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
+	},
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "format": "{icon}",
@@ -165,5 +166,10 @@
   "tray": {
     "icon-size": 12,
     "spacing": 17
-  }
+  },
+"memory": {
+    "interval": 5,
+    "format": "{used:0.1f}G/{total:0.1f}G",
+    "format-alt": "RAM {}%"
+}
 }
