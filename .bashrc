@@ -1,6 +1,7 @@
 # If not running interactively, don't do anything (leave this at the top of this file)
 [[ $- != *i* ]] && return
 
+
 # All the default Omarchy aliases and functions
 # (don't mess with these directly, just overwrite them here!)
 source ~/.local/share/omarchy/default/bash/rc
@@ -171,7 +172,18 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ]; then
+
+                                                                                                                                                                          
+if [ "$TERM" = "linux" ]; then                                                                                                                                          
+    echo -e "\033[?16;0;224c"
+else                                                                                                                                                                    
+    echo -e "\e[2 q"
+fi                                                                                                                                                                      
+# if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ]; then
+if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ] && [[ "$(tty)" != /dev/tty* ]]; then
   exec tmux
 fi
 
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"

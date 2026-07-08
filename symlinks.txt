@@ -12,4 +12,5 @@ cp -r ~/Documents/ideas/dotfiles/backgrounds ~/.config/omarchy/themes/pink-blood
 ln -s ~/Documents/ideas/dotfiles/hyprland/hyprland.conf ~/.config/omarchy/themes/pink-blood-omarchy
 ln -s ~/Documents/ideas/dotfiles/chromium.theme ~/.config/omarchy/themes/pink-blood-omarchy
 ln -s ~/Documents/ideas/dotfiles/hyprland/windows.conf ~/.local/share/omarchy/default/hypr
+ln -s ~/Documents/ideas/dotfiles/fbterm/fbterm-bi ~/.local/bin/
 
