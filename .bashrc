@@ -103,6 +103,7 @@ alias grep='grep --color=auto'
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
+alias ll='ls -alh --color=auto'
 alias cd='z'
 alias cdi='zi'
 
@@ -186,4 +187,4 @@ fi
 
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - bash)"
+command -v pyenv >/dev/null && eval "$(pyenv init - bash)"
