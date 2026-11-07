@@ -7,6 +7,9 @@
 source ~/.local/share/omarchy/default/bash/rc
 
 # Add your own exports, aliases, and functions here.
+# ls/lt: folders first, then files, each sorted oldest -> newest (by modified time)
+alias ls='eza -lh --group-directories-first --icons=auto --sort=modified'
+alias lt='eza --tree --level=2 --long --icons --git --sort=modified'
 
 
 # If not running interactively, don't do anything
@@ -188,3 +191,17 @@ fi
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 command -v pyenv >/dev/null && eval "$(pyenv init - bash)"
+
+# Always-on scripting venv: `pip install x` just works, system python untouched.
+# Rebuild anytime with: rm -rf ~/.venvs/main && python3 -m venv ~/.venvs/main --upgrade-deps
+[[ -d "$HOME/.venvs/main/bin" ]] && export PATH="$HOME/.venvs/main/bin:$PATH"
+
+# spotify_player v0.25+ from GitHub (Arch pkg lags; fixes custom client_id). Remove once pacman has >=0.25
+alias spotify_player="$HOME/.local/bin/spotify_player"
+
+# Open nvim in Ghostty (supports inline images, for the notebooks): nb [file...]
+# (replays the pywal colors first, like this bashrc does for every shell)
+nb() {
+  setsid -f ghostty --working-directory="$PWD" -e bash -c \
+    'cat ~/.cache/wal/sequences 2>/dev/null; exec nvim "$@"' nb "$@" >/dev/null 2>&1
+}
