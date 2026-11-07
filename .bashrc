@@ -168,6 +168,9 @@ export VISUAL=nvim
 alias vim="nvim"
 #alias pomodoro5="bash ~/Documents/ideas/pomodoro5/pomo.sh"
 
+# Private, machine-specific aliases (hosts, IPs, ...): kept out of git
+[[ -f ~/Documents/dotfiles/om-dotfiles/.bashrc.local ]] && source ~/Documents/dotfiles/om-dotfiles/.bashrc.local
+
 #export PATH="$HOME/.emacs.d/bin:$PATH"
 export PATH="$HOME/.config/emacs/bin:$PATH"
 export PATH="/home/agus/snap/bun-js/84/.bun/bin:$PATH"
